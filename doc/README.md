@@ -20,7 +20,7 @@ Get all the appointments for a student in JSON form.
 
 **`password`** `string` The password corresponding to the student. _Required._
 
-**`POST /:school/offerings`
+**`POST /:school/offerings`**
 
 Get all the public offerings for a school in JSON form.
 
