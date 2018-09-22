@@ -6,7 +6,7 @@ This API stores no data and self-erases every 24 hours or after 15 minutes of no
 API Documentation
 -----------------
 
-**`POST** /:school/appointments`**
+**`POST /:school/appointments`**
 
 Get all the appointments for a student in JSON form.
 
@@ -20,7 +20,7 @@ Get all the appointments for a student in JSON form.
 
 **`password`** `string` The password corresponding to the student. _Required._
 
-**`POST** /:school/offerings`**
+**`POST /:school/offerings`
 
 Get all the public offerings for a school in JSON form.
 
