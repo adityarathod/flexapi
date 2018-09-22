@@ -61,4 +61,26 @@ flexGetter.getAppointments = cookieJar => {
 	})
 }
 
+flexGetter.getOfferings = cookieJar => {
+	var school = this.school
+	if (school === "" || !cookieJar) {
+		return
+	}
+
+	return new Promise((resolve, reject) => {
+		var options = {
+			method: 'GET',
+			url: `https://teachmore.org/${school}/getAllOfferings.php`,
+			qs: { _: '0' },
+			headers: { 'x-requested-with': 'XMLHttpRequest' },
+			jar: cookieJar
+		}
+
+		request(options, (err, _, body) => {
+			if (err) reject(err)
+			resolve(body)
+		})
+	})
+}
+
 module.exports = flexGetter

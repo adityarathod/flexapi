@@ -39,6 +39,30 @@ app.post('/:school/appointments', (req, res, next) => {
 })
 
 
+app.post('/:school/offerings', (req, res, next) => {
+	if (!req.body || !req.body.username || !req.body.password) {
+		res.status(400).json({ error: 'MISSING_CREDENTIALS' })
+		next()
+	}
+	flexGetter.setSchool(req.params.school)
+	flexGetter.login(req.body.username, req.body.password)
+		.then(flexGetter.getOfferings)
+		.then(body => {
+			if (body === "" || !body) {
+				res.status(400).json({ error: 'INVALID_CREDENTIALS' })
+				res.end()
+			} else {
+				res.type('json').send(body)
+			}
+		})
+		.catch(() => {
+			res.status(400).json({ error: "REJECTED" })
+		})
+})
+
+
+
+
 app.listen(PORT, () => {
 	console.log(`Now listening on ${PORT}...`)
 })
