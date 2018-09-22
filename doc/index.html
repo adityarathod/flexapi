@@ -21,13 +21,24 @@
 	<h1>FlexTime API (v0)</h1>
 	<p>This API stores no data and self-erases every 24 hours or after 15 minutes of no activity.</p>
 	<h2>API Documentation</h2>
-	<p><code><b>POST</b> /:school/appointments</code></p>
-	<p>Get all the appointments for a student in JSON form.</p>
-	<h5>URL Parameters</h5>
-	<p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
-	<h5>POST Payload (JSON)</h5>
-	<p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
-	<p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+	<section>
+		<p><code><b>POST</b> /:school/appointments</code></p>
+		<p>Get all the appointments for a student in JSON form.</p>
+		<h5>URL Parameters</h5>
+		<p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+		<h5>POST Payload (JSON)</h5>
+		<p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
+		<p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+	</section>
+	<section>
+		<p><code><b>POST</b> /:school/offerings</code></p>
+		<p>Get all the public offerings for a school in JSON form.</p>
+		<h5>URL Parameters</h5>
+		<p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+		<h5>POST Payload (JSON)</h5>
+		<p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
+		<p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+	</section>
 </body>
 
 </html>
