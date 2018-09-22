@@ -17,7 +17,6 @@ app.use(express.static(__dirname + '/doc'))
 
 
 app.post('/:school/appointments', (req, res, next) => {
-	res.header('Content-Type', 'application/json')
 	if (!req.body || !req.body.username || !req.body.password) {
 		res.status(400).json({ error: 'MISSING_CREDENTIALS' })
 		next()
@@ -30,11 +29,11 @@ app.post('/:school/appointments', (req, res, next) => {
 				res.status(400).json({ error: 'INVALID_CREDENTIALS' })
 				res.end()
 			} else {
-				res.send(body)
+				res.type('json').send(body)
 			}
 		})
 		.catch(() => {
-			res.json({ error: "REJECTED" })
+			res.status(400).json({ error: "REJECTED" })
 		})
 })
 
