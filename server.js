@@ -7,6 +7,7 @@
 const flexGetter = require('./flexGetter')
 const bodyParser = require('body-parser')
 const express = require('express')
+const cors = require('cors')
 
 const PORT = process.env.PORT || 8080
 
@@ -14,7 +15,7 @@ var app = express()
 
 app.use(bodyParser.json())
 app.use(express.static(__dirname + '/doc'))
-
+app.use(cors())
 
 app.post('/:school/appointments', (req, res, next) => {
 	if (!req.body || !req.body.username || !req.body.password) {
