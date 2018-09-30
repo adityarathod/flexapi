@@ -1,4 +1,4 @@
-FlexTime API (v0)
+FlexTime API (v0.5)
 =================
 
 This API stores no data and self-erases every 24 hours or after 15 minutes of no activity.
