@@ -19,8 +19,9 @@
 
 <body>
 	<h1>FlexTime API (v0)</h1>
-	<p>This API stores no data and self-erases every 24 hours or after 15 minutes of no activity.</p>
+	<p>This API stores no data and self-erases every 24 hours or after 30 minutes of no activity.</p>
 	<h2>API Documentation</h2>
+	<hr>
 	<section>
 		<p><code><b>POST</b> /:school/appointments</code></p>
 		<p>Get all the appointments for a student in JSON form.</p>
@@ -30,6 +31,7 @@
 		<p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
 		<p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
 	</section>
+	<hr>
 	<section>
 		<p><code><b>POST</b> /:school/offerings</code></p>
 		<p>Get all the public offerings for a school in JSON form.</p>
@@ -38,6 +40,30 @@
 		<h5>POST Payload (JSON)</h5>
 		<p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
 		<p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+	</section>
+	<hr>
+	<section>
+		<p><code><b>GET</b> /:school/teachers</code></p>
+		<p>Get all the teachers for a school in JSON form.</p>
+		<h5>URL Parameters</h5>
+		<p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+	</section>
+	<hr>
+	<section>
+		<p><code><b>POST</b> /:school/makeAppointment</code></p>
+		<p>Makes a FLEX appointment.</p>
+		<h5 id="url-parameters">URL Parameters</h5>
+		<p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+		<h5 id="post-payload-json-">POST Payload (JSON)</h5>
+		<p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
+		<p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+		<p><code><b>teacherID</b></code> <code>string or Number</code> The ID of the teacher to make an appointment
+			for. <em>Required.</em></p>
+		<p><code><b>startDate</b></code> <code>string</code> The date of the appointment, formatted as <code>YYYY-MM-DD</code>.
+			<i>Required.</i></p>
+		<p><code><b>comments</b></code> <code>string</code> Any comments as to the reason for the appointment. <i>Required.</i></p>
+		<p><code><b>eventNum</b></code> <code>string or Number</code> The type of the appointment. (<code>1</code>
+			for FLEX, others vary) <i>Required.</i></p>
 	</section>
 </body>
 

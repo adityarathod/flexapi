@@ -38,6 +38,38 @@ app.post('/:school/appointments', (req, res, next) => {
 		})
 })
 
+app.post('/:school/makeAppointment', (req, res, next) => {
+	if (!req.body || !req.body.username || !req.body.password) {
+		res.status(400).json({ error: 'MISSING_CREDENTIALS' })
+		next()
+	}
+	if (!req.body.teacherID || !req.body.startDate || req.body.comments == null || !req.body.eventNum) {
+		res.status(400).json({ error: 'REQUIRED_INFO_NOT_PRESENT' })
+		next()
+	}
+	var requestData = {
+		st: req.body.teacherID,
+		stDate: req.body.startDate,
+		comments1: req.body.comments,
+		event: req.body.eventNum
+	}
+	flexGetter.setSchool(req.params.school)
+	flexGetter.login(req.body.username, req.body.password)
+		.then(jar => flexGetter.makeAppointment(jar, requestData))
+		.then(body => {
+			if (body === "" || !body) {
+				res.json({ status: 'SUCCESSFUL' })
+				res.end()
+			} else {
+				res.status(400).json({ error: 'INVALID_DATA' })
+				res.end()
+			}
+		})
+		.catch(() => {
+			res.status(400).json({ error: "REJECTED" })
+		})
+})
+
 
 app.post('/:school/offerings', (req, res, next) => {
 	if (!req.body || !req.body.username || !req.body.password) {

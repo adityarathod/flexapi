@@ -83,4 +83,31 @@ flexGetter.getOfferings = cookieJar => {
     })
 }
 
+flexGetter.makeAppointment = (cookieJar, reqData) => {
+    var school = this.school
+    if (school === "" || !cookieJar) {
+        return
+    }
+
+    return new Promise((resolve, reject) => {
+        var options = {
+            method: 'POST',
+            url: `https://teachmore.org/${school}/students/createAppointmentSmall.php`,
+            headers: {
+                "referer": `https://teachmore.org/${school}/students/makeStudentAppointments.php`,
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            form: reqData,
+            jar: cookieJar
+        }
+        request(options, (err, res, body) => {
+            if (err) reject(err)
+
+            if (res.statusCode !== 200) reject(statusCode)
+
+            resolve(body)
+        })
+    })
+}
+
 module.exports = flexGetter
