@@ -11,76 +11,76 @@ var flexGetter = {}
 flexGetter.school = ""
 
 flexGetter.setSchool = school => {
-	this.school = school
+    this.school = school
 }
 
 
 flexGetter.login = (username, password) => {
-	var school = this.school
-	if (school === "") return
-	return new Promise((resolve, reject) => {
-		var cookieJar = request.jar()
-		var options = {
-			method: 'POST',
-			url: `https://teachmore.org/${school}/students/studentLoginCheck.php`,
-			headers: {
-				"referer": `https://teachmore.org/${school}/students/`,
-				"content-type": "application/x-www-form-urlencoded"
-			},
-			form: {
-				"access_login": username,
-				"access_password": password
-			},
-			jar: cookieJar
-		}
-		request(options, (err, res, body) => {
-			if (err) reject(err)
+    var school = this.school
+    if (school === "") return
+    return new Promise((resolve, reject) => {
+        var cookieJar = request.jar()
+        var options = {
+            method: 'POST',
+            url: `https://teachmore.org/${school}/students/studentLoginCheck.php`,
+            headers: {
+                "referer": `https://teachmore.org/${school}/students/`,
+                "content-type": "application/x-www-form-urlencoded"
+            },
+            form: {
+                "access_login": username,
+                "access_password": password
+            },
+            jar: cookieJar
+        }
+        request(options, (err, res, body) => {
+            if (err) reject(err)
 
-			resolve(cookieJar)
-		})
-	})
+            resolve(cookieJar)
+        })
+    })
 }
 
 flexGetter.getAppointments = cookieJar => {
-	var school = this.school
-	if (school === "" || !cookieJar) {
-		return
-	}
+    var school = this.school
+    if (school === "" || !cookieJar) {
+        return
+    }
 
-	return new Promise((resolve, reject) => {
-		var options = {
-			method: 'GET',
-			url: `https://teachmore.org/${school}//students/getEventsPerStudent.php`,
-			jar: cookieJar
-		}
+    return new Promise((resolve, reject) => {
+        var options = {
+            method: 'GET',
+            url: `https://teachmore.org/${school}//students/getEventsPerStudent.php`,
+            jar: cookieJar
+        }
 
-		request(options, (err, _, body) => {
-			if (err) reject(err)
-			resolve(body)
-		})
-	})
+        request(options, (err, _, body) => {
+            if (err) reject(err)
+            resolve(body)
+        })
+    })
 }
 
 flexGetter.getOfferings = cookieJar => {
-	var school = this.school
-	if (school === "" || !cookieJar) {
-		return
-	}
+    var school = this.school
+    if (school === "" || !cookieJar) {
+        return
+    }
 
-	return new Promise((resolve, reject) => {
-		var options = {
-			method: 'GET',
-			url: `https://teachmore.org/${school}/getAllOfferings.php`,
-			qs: { _: '0' },
-			headers: { 'x-requested-with': 'XMLHttpRequest' },
-			jar: cookieJar
-		}
+    return new Promise((resolve, reject) => {
+        var options = {
+            method: 'GET',
+            url: `https://teachmore.org/${school}/getAllOfferings.php`,
+            qs: { _: '0' },
+            headers: { 'x-requested-with': 'XMLHttpRequest' },
+            jar: cookieJar
+        }
 
-		request(options, (err, _, body) => {
-			if (err) reject(err)
-			resolve(body)
-		})
-	})
+        request(options, (err, _, body) => {
+            if (err) reject(err)
+            resolve(body)
+        })
+    })
 }
 
 module.exports = flexGetter

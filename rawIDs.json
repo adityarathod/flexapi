@@ -1,0 +1,814 @@
+[
+	{
+		"txt": "Abogado, Christine",
+		"val": "12591"
+	},
+	{
+		"txt": "Adam, Hart",
+		"val": "1541"
+	},
+	{
+		"txt": "Albizo, H",
+		"val": "1922"
+	},
+	{
+		"txt": "Amaral, D",
+		"val": "430"
+	},
+	{
+		"txt": "Ammon, E",
+		"val": "2550"
+	},
+	{
+		"txt": "Anand, S",
+		"val": "2875"
+	},
+	{
+		"txt": "Anand, A",
+		"val": "6122"
+	},
+	{
+		"txt": "Anaya, A",
+		"val": "258"
+	},
+	{
+		"txt": "Antipuesto, Henry",
+		"val": "4163"
+	},
+	{
+		"txt": "Antonacci, Melissa",
+		"val": "1655"
+	},
+	{
+		"txt": "Avon, K",
+		"val": "96"
+	},
+	{
+		"txt": "Ballado, A",
+		"val": "1217"
+	},
+	{
+		"txt": "Ballin, M",
+		"val": "2614"
+	},
+	{
+		"txt": "Barnett, Searcy",
+		"val": "10873"
+	},
+	{
+		"txt": "Barrett, M",
+		"val": "400"
+	},
+	{
+		"txt": "Berbawy, K",
+		"val": "292"
+	},
+	{
+		"txt": "Brackett-musto, Belinda",
+		"val": "2613"
+	},
+	{
+		"txt": "Bragg, M",
+		"val": "2989"
+	},
+	{
+		"txt": "Brannan, S",
+		"val": "6045"
+	},
+	{
+		"txt": "Breiger, M",
+		"val": "2750"
+	},
+	{
+		"txt": "Briggs, Samantha",
+		"val": "844"
+	},
+	{
+		"txt": "Brucker, R",
+		"val": "3488"
+	},
+	{
+		"txt": "Buehler, K",
+		"val": "6067"
+	},
+	{
+		"txt": "Buell, C",
+		"val": "3295"
+	},
+	{
+		"txt": "Bui, S",
+		"val": "2481"
+	},
+	{
+		"txt": "Burton, S",
+		"val": "1663"
+	},
+	{
+		"txt": "Byrne, Ms",
+		"val": "4835"
+	},
+	{
+		"txt": "Canavero, G",
+		"val": "2661"
+	},
+	{
+		"txt": "Carbin, Ms",
+		"val": "5508"
+	},
+	{
+		"txt": "Ceci, Hunter",
+		"val": "2172"
+	},
+	{
+		"txt": "Cervantes, Connie",
+		"val": "11120"
+	},
+	{
+		"txt": "Chan, W",
+		"val": "2835"
+	},
+	{
+		"txt": "Chang, C",
+		"val": "5486"
+	},
+	{
+		"txt": "Chase, D",
+		"val": "1921"
+	},
+	{
+		"txt": "Cheung, K",
+		"val": "6295"
+	},
+	{
+		"txt": "Chirumamilla, S",
+		"val": "5426"
+	},
+	{
+		"txt": "Chung, A",
+		"val": "2952"
+	},
+	{
+		"txt": "Cimino, J",
+		"val": "1506"
+	},
+	{
+		"txt": "Cimino, M",
+		"val": "5421"
+	},
+	{
+		"txt": "Conlon, Becky",
+		"val": "369"
+	},
+	{
+		"txt": "Cook-kallio, Cheryl",
+		"val": "2529"
+	},
+	{
+		"txt": "Cornils, K",
+		"val": "5422"
+	},
+	{
+		"txt": "Crawford, J",
+		"val": "1451"
+	},
+	{
+		"txt": "Cru, Pivaral",
+		"val": "5423"
+	},
+	{
+		"txt": "Dass, S",
+		"val": "6243"
+	},
+	{
+		"txt": "Daubert, Robert",
+		"val": "5011"
+	},
+	{
+		"txt": "Decraene-gilford, Mechelle",
+		"val": "11493"
+	},
+	{
+		"txt": "Denies, P",
+		"val": "2955"
+	},
+	{
+		"txt": "Dial, Rachel",
+		"val": "1379"
+	},
+	{
+		"txt": "Diclementi, Clint",
+		"val": "5038"
+	},
+	{
+		"txt": "Dilorenzo, Scott",
+		"val": "163"
+	},
+	{
+		"txt": "Dinh, C",
+		"val": "4926"
+	},
+	{
+		"txt": "Domingo, E",
+		"val": "3255"
+	},
+	{
+		"txt": "Easley, Camille",
+		"val": "11920"
+	},
+	{
+		"txt": "Eddings, R",
+		"val": "347"
+	},
+	{
+		"txt": "Eicher, S",
+		"val": "1185"
+	},
+	{
+		"txt": "Einfeldt, J",
+		"val": "6104"
+	},
+	{
+		"txt": "Fair, David",
+		"val": "3180"
+	},
+	{
+		"txt": "Faitel, C",
+		"val": "3274"
+	},
+	{
+		"txt": "Farooq, M",
+		"val": "5139"
+	},
+	{
+		"txt": "Feist, Barbara",
+		"val": "3487"
+	},
+	{
+		"txt": "Fields, S",
+		"val": "6085"
+	},
+	{
+		"txt": "Fraser, J",
+		"val": "463"
+	},
+	{
+		"txt": "Friedman, Adam",
+		"val": "10878"
+	},
+	{
+		"txt": "Friend, C",
+		"val": "3378"
+	},
+	{
+		"txt": "Fung, H",
+		"val": "3431"
+	},
+	{
+		"txt": "Gavin, M",
+		"val": "2829"
+	},
+	{
+		"txt": "Gialdini, Sarah",
+		"val": "3456"
+	},
+	{
+		"txt": "Gomez, D",
+		"val": "1613"
+	},
+	{
+		"txt": "Gonzalez, B",
+		"val": "5841"
+	},
+	{
+		"txt": "Goulet, J",
+		"val": "5908"
+	},
+	{
+		"txt": "Gurtz-cayla, F",
+		"val": "2834"
+	},
+	{
+		"txt": "Guzman, M",
+		"val": "4331"
+	},
+	{
+		"txt": "Hagood, B",
+		"val": "481"
+	},
+	{
+		"txt": "Hallford, C",
+		"val": "2027"
+	},
+	{
+		"txt": "Hansel, Amy",
+		"val": "5920"
+	},
+	{
+		"txt": "Hashimoto, J",
+		"val": "2643"
+	},
+	{
+		"txt": "Hearne, Benjamin",
+		"val": "3589"
+	},
+	{
+		"txt": "Hillier, Jennifer",
+		"val": "2515"
+	},
+	{
+		"txt": "Holmberg, Gina",
+		"val": "4539"
+	},
+	{
+		"txt": "Honerkamp, John",
+		"val": "5678"
+	},
+	{
+		"txt": "Houston, J",
+		"val": "4989"
+	},
+	{
+		"txt": "Ip, G",
+		"val": "4837"
+	},
+	{
+		"txt": "Jackson, J",
+		"val": "3338"
+	},
+	{
+		"txt": "Jacquez, S",
+		"val": "3495"
+	},
+	{
+		"txt": "Javid, Parveneh",
+		"val": "3801"
+	},
+	{
+		"txt": "Jine, Guy",
+		"val": "2847"
+	},
+	{
+		"txt": "Johns, Clint",
+		"val": "3203"
+	},
+	{
+		"txt": "Johnson, P",
+		"val": "4813"
+	},
+	{
+		"txt": "Jones, S",
+		"val": "4844"
+	},
+	{
+		"txt": "Jorgensen, S",
+		"val": "2910"
+	},
+	{
+		"txt": "Kalra, D",
+		"val": "271"
+	},
+	{
+		"txt": "Kamal, S",
+		"val": "5929"
+	},
+	{
+		"txt": "Kammerer, K",
+		"val": "165"
+	},
+	{
+		"txt": "Kathiresan, Shanthi",
+		"val": "5893"
+	},
+	{
+		"txt": "Kaur, Amrit",
+		"val": "12466"
+	},
+	{
+		"txt": "Kaur, M",
+		"val": "6303"
+	},
+	{
+		"txt": "Kirk, Nancy",
+		"val": "4101"
+	},
+	{
+		"txt": "Kleinsasser, Dana",
+		"val": "3236"
+	},
+	{
+		"txt": "Koehler, A",
+		"val": "4845"
+	},
+	{
+		"txt": "Krause, Brian",
+		"val": "4779"
+	},
+	{
+		"txt": "Kumar, S",
+		"val": "1664"
+	},
+	{
+		"txt": "Larsen, N",
+		"val": "2751"
+	},
+	{
+		"txt": "Lau, M",
+		"val": "3226"
+	},
+	{
+		"txt": "Lee, L",
+		"val": "1362"
+	},
+	{
+		"txt": "Lee, A",
+		"val": "2656"
+	},
+	{
+		"txt": "Lehnert, D",
+		"val": "6133"
+	},
+	{
+		"txt": "Leinweber, Gary",
+		"val": "4104"
+	},
+	{
+		"txt": "Leonard, Patricia",
+		"val": "11470"
+	},
+	{
+		"txt": "Lewis, S",
+		"val": "2743"
+	},
+	{
+		"txt": "Lin, K",
+		"val": "2620"
+	},
+	{
+		"txt": "Linton, K",
+		"val": "1204"
+	},
+	{
+		"txt": "Lu, A",
+		"val": "4838"
+	},
+	{
+		"txt": "Lu, Scott",
+		"val": "5374"
+	},
+	{
+		"txt": "Luna, M",
+		"val": "5375"
+	},
+	{
+		"txt": "Lynn, Valery",
+		"val": "80"
+	},
+	{
+		"txt": "Mangiardi, N",
+		"val": "2970"
+	},
+	{
+		"txt": "Marsella-jensen, N",
+		"val": "1928"
+	},
+	{
+		"txt": "Martin, K",
+		"val": "3118"
+	},
+	{
+		"txt": "Martinez, D",
+		"val": "4824"
+	},
+	{
+		"txt": "Massad, Rachel",
+		"val": "4153"
+	},
+	{
+		"txt": "Mattingly, L",
+		"val": "129"
+	},
+	{
+		"txt": "Mcauley, A",
+		"val": "2867"
+	},
+	{
+		"txt": "Mccallum, Breanne",
+		"val": "4302"
+	},
+	{
+		"txt": "Mcdonell, R",
+		"val": "1450"
+	},
+	{
+		"txt": "Melsby, Amanda",
+		"val": "1111"
+	},
+	{
+		"txt": "Miles, Heather",
+		"val": "5865"
+	},
+	{
+		"txt": "Miller, S",
+		"val": "3385"
+	},
+	{
+		"txt": "Milligan, Lindsay",
+		"val": "5406"
+	},
+	{
+		"txt": "Mincey, L",
+		"val": "6175"
+	},
+	{
+		"txt": "Mintey, T",
+		"val": "2953"
+	},
+	{
+		"txt": "Mohandas, S",
+		"val": "3395"
+	},
+	{
+		"txt": "Mohla, Deepika",
+		"val": "5405"
+	},
+	{
+		"txt": "Moyer, I",
+		"val": "6154"
+	},
+	{
+		"txt": "Mundu, Y",
+		"val": "6452"
+	},
+	{
+		"txt": "Newcomer, Courtney",
+		"val": "5522"
+	},
+	{
+		"txt": "O Connor, Liz",
+		"val": "4150"
+	},
+	{
+		"txt": "O Leary, Kathleen",
+		"val": "4567"
+	},
+	{
+		"txt": "Olson, J",
+		"val": "1378"
+	},
+	{
+		"txt": "Pai, S",
+		"val": "6143"
+	},
+	{
+		"txt": "Palanichamy, Subbu",
+		"val": "14867"
+	},
+	{
+		"txt": "Pang, H",
+		"val": "5453"
+	},
+	{
+		"txt": "Parker, K",
+		"val": "2880"
+	},
+	{
+		"txt": "Parsons, V",
+		"val": "5452"
+	},
+	{
+		"txt": "Paulsen, Susan",
+		"val": "2583"
+	},
+	{
+		"txt": "Pearce, D",
+		"val": "3079"
+	},
+	{
+		"txt": "Pham, H",
+		"val": "226"
+	},
+	{
+		"txt": "Phillips, Matt",
+		"val": "2345"
+	},
+	{
+		"txt": "Phillips, Diane",
+		"val": "3030"
+	},
+	{
+		"txt": "Player, R",
+		"val": "5867"
+	},
+	{
+		"txt": "Pohyar, Michael",
+		"val": "6578"
+	},
+	{
+		"txt": "Porter, Joan",
+		"val": "5518"
+	},
+	{
+		"txt": "Qian, R",
+		"val": "6456"
+	},
+	{
+		"txt": "Rallapalli, S",
+		"val": "1877"
+	},
+	{
+		"txt": "Rauschuber, K",
+		"val": "6458"
+	},
+	{
+		"txt": "Reddy, R",
+		"val": "6170"
+	},
+	{
+		"txt": "Reznick, M",
+		"val": "5846"
+	},
+	{
+		"txt": "riggio-schwartz, lorraine",
+		"val": "2015"
+	},
+	{
+		"txt": "Roberson, A",
+		"val": "5351"
+	},
+	{
+		"txt": "Rodda, C",
+		"val": "2622"
+	},
+	{
+		"txt": "Rodocker, M",
+		"val": "2901"
+	},
+	{
+		"txt": "Rooney, J",
+		"val": "297"
+	},
+	{
+		"txt": "Rothfuss, B",
+		"val": "951"
+	},
+	{
+		"txt": "Ryan, Rebecca",
+		"val": "2973"
+	},
+	{
+		"txt": "Saltzman, Mike",
+		"val": "6973"
+	},
+	{
+		"txt": "Sharma, P",
+		"val": "3359"
+	},
+	{
+		"txt": "Shepard, J",
+		"val": "1604"
+	},
+	{
+		"txt": "Shultz, Dustin",
+		"val": "472"
+	},
+	{
+		"txt": "Silva, Deanna",
+		"val": "13388"
+	},
+	{
+		"txt": "Silvernale, Z",
+		"val": "2972"
+	},
+	{
+		"txt": "Sipsy, D",
+		"val": "3141"
+	},
+	{
+		"txt": "Skillings, D",
+		"val": "2818"
+	},
+	{
+		"txt": "Skolnik, Natalia",
+		"val": "3452"
+	},
+	{
+		"txt": "Spooner, Ray",
+		"val": "3211"
+	},
+	{
+		"txt": "Steward, M",
+		"val": "3324"
+	},
+	{
+		"txt": "Stilwell, R",
+		"val": "267"
+	},
+	{
+		"txt": "Stilwell, T",
+		"val": "4781"
+	},
+	{
+		"txt": "Strout, S",
+		"val": "1194"
+	},
+	{
+		"txt": "Sutton, E",
+		"val": "6151"
+	},
+	{
+		"txt": "Tai, C",
+		"val": "2618"
+	},
+	{
+		"txt": "Tavsanli, Ann",
+		"val": "1234"
+	},
+	{
+		"txt": "Tawakuli, Sajad",
+		"val": "5828"
+	},
+	{
+		"txt": "Tebow, M",
+		"val": "3956"
+	},
+	{
+		"txt": "Toegemann, R",
+		"val": "5220"
+	},
+	{
+		"txt": "Truong, K",
+		"val": "6152"
+	},
+	{
+		"txt": "Va, Kirk",
+		"val": "358"
+	},
+	{
+		"txt": "Vila, Sun",
+		"val": "2711"
+	},
+	{
+		"txt": "Vincench, Victoria",
+		"val": "2971"
+	},
+	{
+		"txt": "Vucurevich, D",
+		"val": "277"
+	},
+	{
+		"txt": "Walch, Madeline",
+		"val": "3126"
+	},
+	{
+		"txt": "Walker, Fiona",
+		"val": "11504"
+	},
+	{
+		"txt": "Walker, Lyle",
+		"val": "5902"
+	},
+	{
+		"txt": "Willer, N",
+		"val": "1769"
+	},
+	{
+		"txt": "Williams, T",
+		"val": "3498"
+	},
+	{
+		"txt": "Windsor, Karren",
+		"val": "5056"
+	},
+	{
+		"txt": "Wong, J",
+		"val": "6508"
+	},
+	{
+		"txt": "Wron, Stillwell",
+		"val": "3434"
+	},
+	{
+		"txt": "Yan, D",
+		"val": "2572"
+	},
+	{
+		"txt": "Yin, Stacy",
+		"val": "5775"
+	},
+	{
+		"txt": "Yu, M",
+		"val": "2987"
+	},
+	{
+		"txt": "Zeljak, M",
+		"val": "2806"
+	},
+	{
+		"txt": "Zendejas, T",
+		"val": "6398"
+	},
+	{
+		"txt": "Zimmerman, Mary",
+		"val": "2887"
+	}
+]

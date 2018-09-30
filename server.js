@@ -60,7 +60,12 @@ app.post('/:school/offerings', (req, res, next) => {
 		})
 })
 
-
+app.get('/:school/teachers', (req, res) => {
+	if (req.params.school !== 'irvington') {
+		res.status(400).end()
+	}
+	res.sendFile(__dirname + '/rawIDs.json')
+})
 
 
 app.listen(PORT, () => {
