@@ -99,6 +99,27 @@ app.get('/:school/teachers', (req, res) => {
 	res.sendFile(__dirname + '/rawIDs.json')
 })
 
+app.post('/:school/deleteAppointment', (req, res) => {
+	if (!req.body || !req.body.username || !req.body.password) {
+		res.status(400).json({ error: 'MISSING_CREDENTIALS' })
+		next()
+	}
+	flexGetter.setSchool(req.params.school)
+	if (!req.body.apptID) {
+		res.status(400).json({ error: 'MISSING_APPT_ID' })
+		next()
+	}
+	flexGetter.login(req.body.username, req.body.password)
+		.then(cookieJar => flexGetter.deleteAppointment(cookieJar, req.body.apptID))
+		.then(statusCode => {
+			if (statusCode !== 200) {
+				res.status(400).json({ error: 'REJECTED' }).end()
+			} else {
+				res.json({ status: 'SUCCESS' }).end()
+			}
+		})
+})
+
 
 app.listen(PORT, () => {
 	console.log(`Now listening on ${PORT}...`)
