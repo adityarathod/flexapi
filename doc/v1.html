@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexTime API Docs</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        code {
+            font-family: 'Fira Code', 'Courier New', Courier, monospace;
+        }
+
+        .new {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexTime API (v1)</h1>
+    <p>This API stores no data and self-erases every 24 hours or after 30 minutes of no activity.</p>
+    <h2>API Documentation</h2>
+    <hr>
+    <section>
+        <p><code><b>POST</b> /v1/:school/login</code></p>
+        <p>Get a base64 encoded, API-specific auth token.</p>
+        <h5>URL Parameters</h5>
+        <p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+        <h5>POST Payload (JSON)</h5>
+        <p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
+        <p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+    </section>
+    <!-- <hr>
+    <section>
+        <p><code><b>POST</b> /:school/offerings</code></p>
+        <p>Get all the public offerings for a school in JSON form.</p>
+        <h5>URL Parameters</h5>
+        <p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+        <h5>POST Payload (JSON)</h5>
+        <p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
+        <p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+    </section>
+    <hr>
+    <section>
+        <p><code><b>GET</b> /:school/teachers</code></p>
+        <p>Get all the teachers for a school in JSON form.</p>
+        <h5>URL Parameters</h5>
+        <p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+    </section>
+    <hr>
+    <section>
+        <p><code><b>POST</b> /:school/makeAppointment</code></p>
+        <p>Makes a FLEX appointment.</p>
+        <h5 id="url-parameters">URL Parameters</h5>
+        <p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
+        <h5 id="post-payload-json-">POST Payload (JSON)</h5>
+        <p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
+        <p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+        <p><code><b>teacherID</b></code> <code>string or Number</code> The ID of the teacher to make an appointment
+            for. <em>Required.</em></p>
+        <p><code><b>startDate</b></code> <code>string</code> The date of the appointment, formatted as <code>YYYY-MM-DD</code>.
+            <i>Required.</i></p>
+        <p><code><b>comments</b></code> <code>string</code> Any comments as to the reason for the appointment. <i>Required.</i></p>
+        <p><code><b>eventNum</b></code> <code>string or Number</code> The type of the appointment. (<code>1</code>
+            for FLEX, others vary) <i>Required.</i></p>
+    </section> -->
+</body>
+
+</html>
