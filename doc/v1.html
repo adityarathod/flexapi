@@ -29,11 +29,14 @@
     <section>
         <p><code><b>POST</b> /v1/:school/login</code></p>
         <p>Get a base64 encoded, API-specific auth token.</p>
-        <h5>URL Parameters</h5>
+        <h5>In-URL Parameters</h5>
         <p><code><b>:school</b></code> <code>URL-encoded string</code> The short name of the school. <i>Required.</i></p>
-        <h5>POST Payload (JSON)</h5>
+        <h5>POST Payload (<code>JSON</code>)</h5>
         <p><code><b>username</b></code> <code>string</code> The username of the student. <i>Required.</i></p>
         <p><code><b>password</b></code> <code>string</code> The password corresponding to the student. <i>Required.</i></p>
+        <h5>Returns (<code>text/plain</code>)</h5>
+        <p><code><b>token</b></code> <code>string</code> The token which can be used in lieu of usernames and passwords
+            for clients. <i>Required.</i></p>
     </section>
     <!-- <hr>
     <section>
