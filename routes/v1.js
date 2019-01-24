@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var flexSuite = require('../getters/flexSuite');
+var flexSuite = require('../getters/flexGetter2');
 
 
 router.post('/:school/login', (req, res, next) => {
