@@ -19,6 +19,13 @@ flexGetter.login = (username, password) => {
     var school = this.school
     if (school === "") return
     return new Promise((resolve, reject) => {
+        if (process.env.NODE_ENV === 'development') {
+            if (username === 'flexer' && password === 'testing') {
+                resolve({})
+            } else {
+                reject('Test credentials are incorrect')
+            }
+        }
         var cookieJar = request.jar()
         var options = {
             method: 'POST',
@@ -52,6 +59,27 @@ flexGetter.getAppointments = cookieJar => {
             method: 'GET',
             url: `https://teachmore.org/${school}//students/getEventsPerStudent.php`,
             jar: cookieJar
+        }
+
+        if (process.env.NODE_ENV === 'development') {
+            resolve([
+                {
+                    "start": "2019-02-24",
+                    "$allDay": true,
+                    "backgroundColor": "#4C9937",
+                    "teacherEvent": 0,
+                    "title": "Testing with AppleCrazy for Flex Time",
+                    "uniqueID": "8758"
+                },
+                {
+                    "start": "2019-03-24",
+                    "$allDay": true,
+                    "backgroundColor": "#4C9937",
+                    "teacherEvent": 1,
+                    "title": "Testing with AppleCrazy for Flex Time",
+                    "uniqueID": "8759"
+                }
+            ])
         }
 
         request(options, (err, _, body) => {

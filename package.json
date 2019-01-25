@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "concurrently -n server,tests --kill-others -s last \"npm:start\" \"sleep 1; mocha\" || true"
+    "test": "concurrently -k -n server,tests -s last \"npm:start\" \"export NODE_ENV=development; sleep 1; mocha\" || true"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
