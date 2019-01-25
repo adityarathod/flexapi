@@ -75,5 +75,7 @@ typings/
 # Serverless directories
 .serverless
 
+# Unit test results
+junit/
 
 # End of https://www.gitignore.io/api/node

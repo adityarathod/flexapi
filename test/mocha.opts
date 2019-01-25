@@ -1,0 +1,2 @@
+# mocha.opts
+--reporter mocha-junit-reporter --reporter-options mochaFile=junit/test-results.xml
