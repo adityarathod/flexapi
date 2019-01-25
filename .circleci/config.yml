@@ -16,14 +16,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: mkdir ~/junit
       - run:
           command: yarn test
-          environment:
-            MOCHA_FILE: ~/junit/test-results.xml
           when: always
       - store_test_results:
-          path: ~/junit
+          path: ./junit
       - store_artifacts:
-          path: ~/junit
+          path: ./junit
 
