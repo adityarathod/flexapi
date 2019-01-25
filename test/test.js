@@ -1,10 +1,11 @@
 var chai = require('chai');
 var chaiHttp = require('chai-http');
+var utils = require('./testUtil');
 
 var expect = chai.expect;
 chai.use(chaiHttp);
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = utils.normalizePort(process.env.PORT || '3000');
 const apiRoot = `http://localhost:${port}`
 
 describe('FlexAPI v0', () => {
@@ -20,15 +21,3 @@ describe('FlexAPI v0', () => {
 })
 
 
-function normalizePort(val) {
-    var port = parseInt(val, 10);
-    if (isNaN(port)) {
-        // named pipe
-        return val;
-    }
-    if (port >= 0) {
-        // port number
-        return port;
-    }
-    return false;
-}
