@@ -5,16 +5,23 @@ var flexSuite = require('../getters/flexGetter2');
 
 
 router.post('/:school/login', (req, res, next) => {
+    if (!req.body || !req.body.username || !req.body.password) {
+        res.status(400).json({ error: 'MISSING_CREDENTIALS' });
+        next();
+    }
+    flexSuite.setSchool(req.params.school);
     res.set('Content-Type', 'text/plain');
     flexSuite.setSchool('irvington');
-    flexSuite.login('***REMOVED***', '***REMOVED***').then(cookieJar => {
+    flexSuite.login(username, password).then(cookieJar => {
         res.send(Buffer.from(cookieJar).toString('base64'));
         res.end();
     }).catch(err => {
         if (err === 'Incorrect username/password') {
-            res.status(400).send('Incorrect credentials');
+            res.status(400).json({ error: 'INCORRECT_CREDENTIALS' });
+        } else {
+            res.status(400).json({ error: 'ERROR' });
         }
         res.end();
-    })
-})
+    });
+});
 module.exports = router;
