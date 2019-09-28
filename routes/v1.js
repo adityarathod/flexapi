@@ -11,7 +11,6 @@ router.post('/:school/login', (req, res, next) => {
     }
     flexSuite.setSchool(req.params.school);
     res.set('Content-Type', 'text/plain');
-    flexSuite.setSchool('irvington');
     flexSuite.login(username, password).then(cookieJar => {
         res.send(Buffer.from(cookieJar).toString('base64'));
         res.end();
